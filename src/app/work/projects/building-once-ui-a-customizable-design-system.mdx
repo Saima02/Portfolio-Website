@@ -1,45 +1,41 @@
 ---
-title: "Building Once UI, a Customizable Design System"
-publishedAt: "2024-04-08"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+title: "Smart Obstacle Detection for the Visually Impaired"
+summary: "A wearable ultrasonic sensor–based device that assists visually impaired individuals in detecting obstacles and navigating safely with vibration and sound alerts."
 images:
-  - "/images/projects/project-01/cover-01.jpg"
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/cover-03.jpg"
-  - "/images/projects/project-01/cover-04.jpg"
+  - "/images/projects/project-01/specc.jpg"
+  - "/images/projects/project-01/recording.mp4"
 team:
-  - name: "Saima"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-  - name: "Lorant One"
-    role: "Design Engineer"
-    avatar: "/images/projects/project-01/avatar-01.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+  - name: "Ansari Saima"
+    GitHub: "https://github.com/Saima02/smart_wear.git"
+link: "https://github.com/Saima02/smart_wear.git"
 ---
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+In this project, I focused on designing a sensor-based assistive system that detects obstacles within 20 cm using ultrasonic sensors and activates a buzzer and vibration alert to help visually impaired individuals navigate safely and independently.
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- Obstacle Detection: Detects obstacles ahead using ultrasonic sensors.
+
+- Vibration Alerts: Provides vibration feedback based on obstacle distance.
+
+- Audible Alerts: Buzzer sound increases in intensity as the user approaches an obstacle.
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- Hardware: Arduino Uno, Ultrasonic Sensors (HC-SR04), Buzzer, Vibration Motor, Battery Module
+
+- Software: Arduino IDE (Embedded C / C++)
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+Sensor Accuracy: Calibrating ultrasonic sensors for different obstacle distances.
+
+Hardware Integration: Combining multiple components to work in sync.
 
 ## Outcome
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+Successfully developed a working prototype that detects obstacles and alerts the user through vibration and sound signals. The project demonstrates how simple sensor-based electronics can significantly improve the safety and independence of visually impaired individuals.
+
+

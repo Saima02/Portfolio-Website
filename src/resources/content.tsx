@@ -10,7 +10,7 @@ const person: Person = {
   name: `Ansari Saima`,
   role: "Software Engineer",
   avatar: "/images/mee.jpg",
-  email: "example@gmail.com",
+  email: "ansarisaimaa582@gmail.com",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, 
   languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -43,9 +43,9 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/mee.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.name}`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Learning and creating with AI and web.</>,
   featured: {
