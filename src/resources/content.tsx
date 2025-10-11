@@ -47,7 +47,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Learning and creating with AI and web.</>,
+  headline: <>Building and learning through the world of web technology.</>,
   featured: {
     display: false,
     title: (
@@ -63,8 +63,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Saima, Final year Student at K.J somaiya Institute of Technology
-      passionate about exploring intelligence in data and design through technology.
+      I’m Saima, a Final Year Student at K.J. Somaiya Institute of Technology, 
+      passionate about blending design and technology to build meaningful web experiences.
     </>
   ),
 };
@@ -90,7 +90,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Passionate about solving problems through technology — from designing interactive web experiences to exploring intelligent, data-driven solutions that make an impact.
+        Passionate about solving problems through technology — from interactive web experiences to impactful solutions.
       </>
     ),
   },
