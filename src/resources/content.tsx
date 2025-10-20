@@ -161,16 +161,24 @@ const about: About = {
         title: "Development",
         tags: [
           {
-            name: "HTML",
+            name: "React",
             icon: "",
           },
           {
-            name: "CSS",
+            name: "TailwindCSS",
             icon: "CSS",
           },
           {
             name: "Javascript",
             icon: "Javascript",
+          },
+          {
+            name: "Nodejs",
+            icon: "Nodejs",
+          },
+          {
+            name: "Expressjs",
+            icon: "expressjs",
           },
           {
             name: "Next.js",
@@ -179,22 +187,6 @@ const about: About = {
         ],
   
       },
-      {
-        title: "Programming & Scripting",
-        tags: [
-          {
-            name: "Python",
-            icon: "Python",
-          },
-          {
-            name: "C",
-          },
-          {
-            name: "C++",
-          },
-          
-        ],
-      }, 
       {
         title: "Tools & Platforms",
         tags: [
