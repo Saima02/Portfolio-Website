@@ -27,7 +27,7 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/Saima02",
+    link: "https://github.com/Saima-Ansari2",
   },
   {
     name: "LinkedIn",
@@ -47,7 +47,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building and learning through the world of web technology.</>,
+  headline: <>Analyzing data. Learning daily. Growing constantly.</>,
   featured: {
     display: false,
     title: (
