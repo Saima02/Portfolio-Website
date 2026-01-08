@@ -8,7 +8,7 @@ const person: Person = {
   firstName: "Ansari",
   lastName: "Saima",
   name: `Ansari Saima`,
-  role: "Software Engineer",
+  role: "Aspiring Data Analyst",
   avatar: "/images/mee.jpg",
   email: "ansarisaimaa582@gmail.com",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, 
@@ -90,7 +90,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Passionate about solving problems through technology — from interactive web experiences to impactful solutions.
+        Building insights through data and continuous learning.
       </>
     ),
   },
@@ -98,6 +98,23 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Experience",
     experiences: [
+      {
+        company: "NASSCOM Foundation",
+        timeframe: "Dec 2025 - Ongoing",
+        role: "Data Analytics Intern",
+        achievements: [
+          <>
+        Learning and applying data analytics concepts on real organizational data.
+          </>,
+          <>
+            Performed data cleaning and preprocessing using analytical tools.
+          </>,
+          <>
+            Built basic reports and visualizations to communicate insights.
+          </>,
+        ],
+      }
+
       {
         company: "Godavari Biorefineries Ltd. ",
         timeframe: "Feb 2024 - March 2024",
@@ -158,46 +175,35 @@ const about: About = {
     skills: [
       {
 
-        title: "Development",
+        title: "Analytics",
         tags: [
-          {
-            name: "React",
-            icon: "",
-          },
-          {
-            name: "TailwindCSS",
-            icon: "CSS",
-          },
-          {
-            name: "Javascript",
-            icon: "Javascript",
-          },
-          {
-            name: "Nodejs",
-            icon: "Nodejs",
-          },
-          {
-            name: "Expressjs",
-            icon: "expressjs",
-          },
-          {
-            name: "Next.js",
-            icon: "Next.js",
-          },
+          { name: "Excel" },
+          { name: "SQL" },
+          { name: "Data Cleaning" },
+          { name: "PostgreSQL" },
         ],
-  
       },
+      {
+          title: "Data Visualization",
+          tags: [
+            { name: "Power BI" },
+            { name: "Tableau" },
+            { name: "Pivot Table" },
+            { name: "Dashboards" },
+          ],
+      },
+
       {
         title: "Tools & Platforms",
         tags: [
           {
-            name: "Git",
+            name: "Google Colab",
           },
           {
             name: "VS code",
           },
           {
-            name: "Google colab",
+            name: "Git",
           },
         ],
       }, 
