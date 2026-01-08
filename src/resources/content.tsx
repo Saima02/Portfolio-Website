@@ -64,7 +64,7 @@ const home: Home = {
   subline: (
     <>
       I’m Saima, a Final Year Student at K.J. Somaiya Institute of Technology, 
-      passionate about blending design and technology to build meaningful web experiences.
+      curious about patterns, passionate about insights.
     </>
   ),
 };
