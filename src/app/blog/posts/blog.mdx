@@ -1,187 +1,71 @@
 ---
-title: "SQL Basics: DISTINCT, WHERE, LIKE, AND/OR/IN/BETWEEN"
-summary: "Learn the functions, syntax, and practical queries of essential SQL commands using the DVD Rental database."
-images:
-  - "/images/projects/project-01/sql.jpg"
-team:
-  - name: "Ansari Saima"
-Database link: "https://neon.com/postgresql/postgresql-getting-started/postgresql-sample-database"
+title: "Create, edit and delete blog posts"
+summary: "Create, edit and delete posts in the blog section of your Magic Portfolio."
+publishedAt: "2025-03-17"
+tag: "Magic Portfolio"
 ---
 
-## Overview
+## Manage posts
 
-This tutorial covers fundamental **SQL commands** used to query databases effectively.  
-We will explore **DISTINCT, WHERE, LIKE, AND, OR, IN, and BETWEEN** with **practical examples** using the **DVD Rental database**.
+You can create, edit and delete posts by adding, modifying or removing `*.mdx` files in the `src/app/blog/posts` directory.
 
----
+## Frontmatter
 
-## 1️⃣ DISTINCT
+The frontmatter is used to set the post's metadata: title, description, image, and tags. It's used in the post's page and in meta- and open graph tags.
 
-**Function:** Removes duplicate rows from the result set.  
+<CodeBlock
+    marginBottom="16"
+    codes={[
+      {
+        code:
+`---
+title: "Arriving to a new milestone in my career"
+publishedAt: "2024-04-08"
+image: "/images/gallery/img-02.jpg"
+summary: "Every career is a journey, filled with challenges, growth, and those significant moments that mark a shift in our path."
+tag: "Journal"
+---`,
+        language: "tsx",
+        label: "src/app/blog/posts/post-1.mdx"
+      }
+    ]}
+/>
 
-**Syntax:**  
-```sql
-SELECT DISTINCT column_name
-FROM table_name;
-````
+## MDX syntax
 
-**Practice Query:**
+You can use MDX to write the content of your posts. It helps you write rich and dynamic content with minimal code. Some MDX elements will be automatically transformed to Once UI components to integrate better in the design and add additional functionality.
 
-```sql
-SELECT DISTINCT genre
-FROM film;
-```
+## Custom components
 
-> Returns a list of **unique genres** from the `film` table.
+You can use custom components in MDX files, but you need to import them first in the `src/components/mdx.tsx` file.
 
----
+<CodeBlock
+    marginBottom="16"
+    highlight="11-12"
+    codes={[
+      {
+        code:
+`const components = {
+    p: createParagraph as any,
+    h1: createHeading(1) as any,
+    h2: createHeading(2) as any,
+    h3: createHeading(3) as any,
+    h4: createHeading(4) as any,
+    h5: createHeading(5) as any,
+    h6: createHeading(6) as any,
+    img: createImage as any,
+    a: CustomLink as any,
+    Table,
+    CodeBlock,
+};`,
+        language: "tsx",
+        label: "src/components/mdx.tsx"
+      }
+    ]}
+/>
 
-## 2️⃣ WHERE
+As you can see, the `Table` and `CodeBlock` components are already imported and available for use. You can add more by simply importing them to this file and passing them to the `components` object.
 
-**Function:** Filters rows based on a condition.
+## Hot reload
 
-**Syntax:**
-
-```sql
-SELECT column_name
-FROM table_name
-WHERE condition;
-```
-
-**Practice Query:**
-
-```sql
-SELECT first_name, last_name
-FROM customer
-WHERE city = 'London';
-```
-
-> Retrieves customers who live in London.
-
----
-
-## 3️⃣ LIKE
-
-**Function:** Performs **pattern matching** in text columns.
-
-**Syntax:**
-
-```sql
-SELECT column_name
-FROM table_name
-WHERE column_name LIKE 'pattern';
-```
-
-**Practice Query:**
-
-```sql
-SELECT title
-FROM film
-WHERE title LIKE 'A%';
-```
-
-> Finds all films whose title starts with the letter 'A'.
-
----
-
-## 4️⃣ AND / OR
-
-**Function:** Combine multiple conditions for flexible filtering.
-
-**Syntax Examples:**
-
-```sql
--- AND
-SELECT first_name, last_name
-FROM customer
-WHERE city = 'London' AND active = 1;
-
--- OR
-SELECT first_name, last_name
-FROM customer
-WHERE city = 'London' OR city = 'Paris';
-```
-
-> `AND` ensures **both conditions** are true, `OR` allows **either condition**.
-
----
-
-## 5️⃣ IN
-
-**Function:** Checks if a value matches **any value in a list**.
-
-**Syntax:**
-
-```sql
-SELECT column_name
-FROM table_name
-WHERE column_name IN (value1, value2, ...);
-```
-
-**Practice Query:**
-
-```sql
-SELECT title
-FROM film
-WHERE rating IN ('PG', 'PG-13');
-```
-
-> Returns films with a rating of `PG` or `PG-13`.
-
----
-
-## 6️⃣ BETWEEN
-
-**Function:** Filters rows within a **range of values**.
-
-**Syntax:**
-
-```sql
-SELECT column_name
-FROM table_name
-WHERE column_name BETWEEN value1 AND value2;
-```
-
-**Practice Query:**
-
-```sql
-SELECT rental_date
-FROM rental
-WHERE rental_date BETWEEN '2005-01-01' AND '2005-12-31';
-```
-
-> Returns rentals made between January 1, 2005 and December 31, 2005.
-
----
-
-## Outcome / Learning
-
-* Mastered **data filtering and querying** using SQL commands.
-* Practiced queries with the **DVD Rental database**.
-* Applied `DISTINCT`, pattern matching, logical operators, and range filtering.
-* Developed strong understanding of **SQL fundamentals** for data analysis.
-
----
-
-💡 **Tip:**
-
-* Use **screenshots or query results** in your blog for better engagement.
-* Readers can **download the DVD Rental database** to practice all queries hands-on.
-* Connect these queries to your **real projects** (like dashboards) to showcase applied skills.
-
-```
-
----
-
-✅ **Features of this MDX file:**  
-- Full coverage of all commands you mentioned.  
-- Each command has: **function, syntax, practice query, explanation**.  
-- Styled for Magic Portfolio — can be placed in `app/blog/posts/sql-basics.mdx`.  
-- Ready for your portfolio blog.  
-
----
-
-If you want, I can **also create a “download link” inside this MDX** pointing to the DVD Rental DB so users can **practice directly from your blog**.  
-
-Do you want me to do that next?
-```
+Hot reload of MDX files is currently not supported, but we're working on it.
