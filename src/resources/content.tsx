@@ -103,7 +103,7 @@ const about: About = {
         timeframe: "Dec 2025 - Ongoing",
         role: "Data Analytics Intern",
         achievements: [
-          <>
+        <>
         Learning and applying data analytics concepts on real organizational data.
           </>,
           <>
@@ -113,7 +113,7 @@ const about: About = {
             Built basic reports and visualizations to communicate insights.
           </>,
         ],
-      }
+      },
 
       {
         company: "Godavari Biorefineries Ltd. ",
@@ -163,7 +163,7 @@ const about: About = {
       {
         name: "Elphinstone College",
         description: <>Higher Secondary Certificate (HSC) <br />
-        <i>Completed in</i> 2021
+        <i> Completed in </i> 2021
         </>,
       },
     ],
@@ -177,33 +177,50 @@ const about: About = {
 
         title: "Analytics",
         tags: [
-          { name: "Excel" },
-          { name: "SQL" },
-          { name: "Data Cleaning" },
-          { name: "PostgreSQL" },
+          {
+            name: "SQL",
+            icon: "",
+          },
+          {
+            name: "Advanced Excel",
+            icon: "CSS",
+          },
+          {
+            name: "Data Cleaning",
+            icon: "Javascript",
+          },
+          {
+            name: "PostgreSQL",
+            icon: "Nodejs",
+          },
         ],
+  
       },
       {
-          title: "Data Visualization",
-          tags: [
-            { name: "Power BI" },
-            { name: "Tableau" },
-            { name: "Pivot Table" },
-            { name: "Dashboards" },
-          ],
-      },
-
+        title: "Data Visualization",
+        tags: [
+          {
+            name: "PowerBi",
+          },
+          {
+            name: "Pivot Table (Excel)",
+          },
+          {
+            name: "Dashboards",
+          },
+        ],
+      }, 
       {
         title: "Tools & Platforms",
         tags: [
           {
-            name: "Google Colab",
+            name: "Git",
           },
           {
             name: "VS code",
           },
           {
-            name: "Git",
+            name: "Google colab",
           },
         ],
       }, 
